@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <div className="flex justify-between">
-      <img src="./7essabat_app_logo.png" alt="logo" className="w-15" />
+      <img src="/7essabat_app_logo.png" alt="logo" className="w-15" />
       {/* {date + time} */}
       <div className="flex flex-col text-white font-bold text-sm justify-center items-center gap-1.5">
         {/* date */}

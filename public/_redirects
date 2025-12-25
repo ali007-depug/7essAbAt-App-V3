@@ -1,1 +1,6 @@
 /*    /index.html   200
+/assets/*   /assets/:splat   200
+/*.png      /:splat          200
+/*.svg      /:splat          200
+/*.webmanifest /:splat       200
+/*          /index.html      200

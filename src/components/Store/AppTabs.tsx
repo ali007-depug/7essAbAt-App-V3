@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaProductHunt, FaStoreAlt } from "react-icons/fa";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import type { inputsFields } from "@/types/store";
-import StoreInputs from "./StoreInputs";
+import StoreInputs from "./storeTap/StoreInputs";
 import Products from "./productsTap/Products";
 import SellsInputs from "./sellsTap/SellsInputs";
 
@@ -62,7 +62,6 @@ export default function AppTabs() {
         {/* Contents */}
         {/* stores */}
         <TabsContent value="store" className="space-y-3">
-          
           <StoreInputs
             inputsField={inputsField}
             handleInputsChange={handleInputsChange}

@@ -1,16 +1,15 @@
 import type { StoreInputsProps } from "@/types/store";
-import { Input } from "../ui/input";
-import { Field, FieldGroup, FieldLabel } from "../ui/field";
+import { Input } from "../../ui/input";
+import { Field, FieldGroup, FieldLabel } from "../../ui/field";
 import { toast } from "sonner";
 import { BsX } from "react-icons/bs";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { addDataToLocalStorage, getDataFromLocalStorage } from "@/actions";
 import { FaCartPlus } from "react-icons/fa";
 import { type FormEvent } from "react";
 import type { inputsFields } from "@/types/store";
-import CapitalCard from "./CapitalCard";
-import { motion } from "motion/react"
-
+import CapitalCard from "../CapitalCard";
+import { motion } from "motion/react";
 
 export default function StoreInputs({
   inputsField,
@@ -91,7 +90,12 @@ export default function StoreInputs({
   }
 
   return (
-    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="flex gap-3 flex-col">
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex gap-3 flex-col"
+    >
       <CapitalCard
         cardText="رأس المال"
         moneyNumber={moneyNumber?.toLocaleString("en-US")}
